@@ -5,8 +5,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /***
- * 在新的springboot框架中已经不使用CorsConfig implements WebMvcConfigurer这种实现方法来配置
- * 采用新的配置方法，迁移的时候注意版本控制
+ * 在新的springboot框架中还是使用CorsConfig implements WebMvcConfigurer这种实现方法来配置，但是有更新的方法如CorsWebFilter和application文件配置
  */
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
